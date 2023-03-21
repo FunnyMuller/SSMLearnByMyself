@@ -9,9 +9,13 @@
         <module name="spring_helloworld" />
         <module name="spring-proxy" />
         <module name="mybatis_resultMap" />
+        <module name="spring_mvc_demo" />
         <module name="mybatis_helloworld" />
+        <module name="spring_mvc_helloworld" />
+        <module name="spring-transaction" />
         <module name="mybatis_parameter" />
         <module name="mybatis_mbg" />
+        <module name="spring-aop" />
         <module name="mybatis_dynamicSQL" />
         <module name="mybatis_cache" />
         <module name="spring_ioc_xml" />
@@ -25,10 +29,15 @@
       <module name="mybatis_mbg" target="1.8" />
       <module name="mybatis_parameter" target="1.8" />
       <module name="mybatis_resultMap" target="1.8" />
+      <module name="spring-aop" target="1.8" />
       <module name="spring-proxy" target="1.8" />
+      <module name="spring-transaction" target="1.8" />
       <module name="spring_helloworld" target="1.8" />
       <module name="spring_ioc_annotation" target="1.8" />
       <module name="spring_ioc_xml" target="1.8" />
+      <module name="spring_mvc_demo" target="1.8" />
+      <module name="spring_mvc_helloworld" target="1.8" />
+      <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

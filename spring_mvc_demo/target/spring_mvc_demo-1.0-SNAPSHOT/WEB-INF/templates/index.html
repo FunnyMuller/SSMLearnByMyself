@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <title>首页</title>
+</head>
+<body>
+<h1>index.html</h1>
+<a th:href="@{/hello}">测试@RequestMapping注解所标识的位置</a>
+<form th:action="@{/hello}" method="post">
+    <input type="submit" value="@测试@RequestMapping注解的method属性">
+</form>
+<a th:href="@{/aac/test/ant}">测试@RequestMapping注解支持ant风格的路径</a><br>
+<a th:href="@{/test/rest/admin/1}">测试@RequestMapping注解的value属性中的占位符</a>
+<hr>
+<form  th:action="@{/param/pojo}" method="post">
+    用户名:<input type="text" name="username"><br>
+    密码: <input type="password" name="password"><br>
+    <input type="submit" value="登录"><br>
+</form>
+<hr>
+<a th:href="@{/test/mav}">测试通过ModelAndView向请求域共享数据</a><br>
+<a th:href="@{/test/model}">测试通过Model向请求域共享数据</a><br>
+<a th:href="@{/test/modelMap}">测试通过ModelMap向请求域共享数据</a><br>
+<a th:href="@{/test/map}">测试通过Map向请求域共享数据</a><br>
+<a th:href="@{/test/session}">测试向请求域共享数据</a><br>
+<a th:href="@{/test/application}">测试向请求域共享数据</a><br>
+<hr>
+<a th:href="@{/test/view/thymeleaf}">测试thymeleaf</a><br>
+<a th:href="@{/test/view/forward}">测试InternalResourcesView</a><br>
+<a th:href="@{/test/view/redirect}">测试RedirectView</a>
+</body>
+</html>
